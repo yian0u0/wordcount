@@ -1,7 +1,9 @@
 #include<stdio.h>
 #include<string.h>
+
 int GetWordNumber(char string[]);   //计算单词数量
 int GetCharNumber(char string[]);   //计算字符数量
+
 int main(int argc ,char *argv[])
 {
 	char buff[256];
@@ -29,7 +31,7 @@ int main(int argc ,char *argv[])
 	}
 	else
 	{
-		if(strcmp(argv[1],"-v") == 0)
+		if(strcmp(argv[1],"-w") == 0)
 		{
 			sum = GetWordNumber(buff);
 			printf("单词数： %d\n",sum);
